@@ -4,7 +4,7 @@ import sklearn as sk
 import statsmodels as sm
 
 
-def create_isi(times):
+def create_isis(times):
     """Calc ISIs for a 1darray of spikes times"""
     if times.ndim > 1:
         raise ValueError("times must be 1d")
