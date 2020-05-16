@@ -50,9 +50,13 @@ class CondDist():
     def train(self, isis):
         pass
 
-    def probs(self, isi):
+    def probs(self, cond, isi):
         pass
-
+  
+    def other_probs(self, cond, isi):
+        # returns all the prob of all other conds, not cond
+        # It is a simple convenience func
+        pass
 
 # Behave prob - est from the actual trials
 # which we assume is series of ints
@@ -66,7 +70,7 @@ class Behave():
     def probs(self, cond):
         pass
 
-    def probs_other(self, cond):
+    def other_probs(self, cond):
         # returns all the prob of all other conds, not cond
         # It is a simple convenience func
         return None
