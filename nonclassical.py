@@ -42,6 +42,17 @@ class TemporalDist():
     def probs(self, isi):
         pass
 
+class CondDist():
+    """Takes a conds list, a Dist() class, and optional kwargs."""
+    def __init__(self, conds, dist, **dist_kwargs):
+        pass
+
+    def train(self, isis):
+        pass
+
+    def probs(self, isi):
+        pass
+
 
 # Behave prob - est from the actual trials
 # which we assume is series of ints
