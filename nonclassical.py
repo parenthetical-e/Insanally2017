@@ -80,8 +80,9 @@ class Behave():
 #
 # Needs to rerun for each cond in Behave.
 #
-# It assumes we have pre-trained Dist, TemporalDist, Behave meaning
+# It assumes we have pre-trained CondDist(), Behave() meaning
 # a seperate train() loop is needed, but it is not defined here.
+# CV is also an open problem, unsketched.
 def decode(isis, cond, dist, behave, p0=0.5):
     probs = np.zeros(isis.shape[0] + 1)
     probs[0] = p0
